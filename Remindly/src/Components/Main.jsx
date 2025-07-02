@@ -126,7 +126,7 @@ export function Main()
 
 export function Vanakam() {
     return (
-        <div className={"bg-blue-500"}>hello</div>
+        <div className={"bg-blue-500"}>hello are we good?</div>
     )
 
 }
