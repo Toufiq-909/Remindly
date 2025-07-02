@@ -8,12 +8,12 @@ export default function Homepage() {
                 A peaceful place to keep your mind clear welcome to <span
                 className="bg-gradient-to-r from-blue-500 via-teal-400 to-cyan-500
  bg-clip-text text-transparent">
-  Remaindly
+  Remindly
 </span>
             </p>
 
             <div className={"flex flex-col h-[70vh] mt-6  lg:flex-row-reverse lg:w-[80%] lg:justify-around lg:mt-23"}>
-                <p className={"font-[tinos] italic font-medium text-2xl lg:w-[50%] lg:mt-9"}>
+                <p className={"font-[tinos] italic font-medium text-2xl lg:w-[50%] lg:mt-14"}>
                     We’ll send you reminders by email to help you stay on track and get started. If you'd like to
                     receive
                     updates on WhatsApp too, consider supporting us with a small donation — it helps us keep
@@ -22,7 +22,7 @@ export default function Homepage() {
                 </p>
 
                 <div
-                    className={"flex flex-col  justify-evenly items-center mt-6 h-[35vh]  lg:w-[35%] lg:h-[40vh]"}>
+                    className={"flex flex-col  justify-evenly items-center mt-6 h-[55vh]  lg:w-[35%] lg:h-[70vh]"}>
                     <label className="input w-[90%]">
                         <span className="label ">@</span>
                         <input className={"font-[tinos] italic text-xl "} type={"email"}
@@ -36,9 +36,15 @@ export default function Homepage() {
                     </label>
                     <button className={"btn btn-secondary font-[tinos] italic text-xl w-[90%]"}>Sign In</button>
 
-                    <p className={"font-[tinos] italic text-xl"}>or</p>
+                    <p className={"font-[tinos] italic text-xl divider w-[89%] ml-5 md:ml-12 lg:ml-5"}>or</p>
 
                     <button className={"btn btn-secondary font-[tinos] italic text-xl w-[90%]"}>Create Account
+                    </button>
+
+                    <button className={"btn  font-[tinos] italic text-xl  w-[90%] "}
+                            onClick={() => {
+                                nav("/qr")
+                            }}>Donate Now!
                     </button>
 
 
@@ -46,17 +52,12 @@ export default function Homepage() {
 
 
             </div>
-            <button className={"btn  font-[tinos] italic text-xl mt-4 ml-5 w-[90%] lg:w-[26%] lg:mr-182 mb-12"} onClick={()=>{
-                nav("/qr")
-            }}>Donate Now!
-            </button>
 
 
         </div>
 
-            <footer className={"footer footer-center font-[tinos] italic text-lg mt-18 lg:mt-0"}>
+            <footer className={"footer footer-center font-[tinos] italic text-lg mt-18 lg:mt-14"}>
                 by Toufiq // 2025
-
             </footer>
 
         </>
